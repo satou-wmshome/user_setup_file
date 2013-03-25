@@ -1,3 +1,7 @@
-set tabstop=4
+set nocompatible
+set encoding=utf-8
 set number
-autocmd FileType * set formatoptions-=ro
+set tabstop=4
+set showmatch
+set noautoindent
+autocmd FileType * setlocal formatoptions-=ro
