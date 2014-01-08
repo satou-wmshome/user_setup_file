@@ -6,14 +6,22 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific aliases and functions
+case "${OSTYPE}" in
+darwin*)
+  alias ls="ls -aG"
+  alias ll="ls -laG"
+  ;;
+linux*)
+  alias ls='ls --color'
+  alias ll='ls -la --color'
+  ;;
+esac
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-alias ll='ls -la'
 alias vi='vim'
+alias SSH_WMS_DEV='ssh satou@192.168.0.59'
 alias SSH_WMS_PST_PUB='ssh satou@192.168.0.42'
-alias SSH_WMS_PST_DEV='ssh satou@192.168.0.59'
-alias SSH_WMS_AKIBARE_STG='ssh -i ~/.ssh/STG-WMS-KEY.pem ec2-user@54.249.4.249'
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
