@@ -20,7 +20,7 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias vi='vim'
-alias SSH_WMS_DEV='ssh satou@192.168.0.59'
+alias SSH_WMS_DEV='ssh satou@192.168.0.38'
 alias SSH_WMS_PST_PUB='ssh satou@192.168.0.42'
 
 # rbenv
